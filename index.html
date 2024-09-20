@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Biblioteca Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        .matrix-container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            text-shadow: 0 0 10px #fff, 0 0 20px rgba(255, 255, 255, .5);
+        }
+        
+        p {
+            margin-bottom: 40px;
+        }
+        a {
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="matrix-container">
+        <h1>Biblioteca libre</h1>
+        <p>Selección de libros para compartir gratuitamente. </p>
+        <a href="https://drive.proton.me/urls/CR8MBNSMQ4#LnPNTvzFVMRd">Acceso al drive</a>
+
+    </div>
+    
+    <!-- Add some matrix-like effects -->
+    <script>
+        // Get all elements with class "matrix-effect"
+        const matrixEffects = document.querySelectorAll('.matrix-effect');
+        
+        // Loop through each element
+        matrixEffects.forEach((effect) => {
+            // Create a new canvas and add it to the effect container
+            const canvas = document.createElement('canvas');
+            canvas.width = 200;
+            canvas.height = 100;
+            
+            // Get the context of the canvas
+            const ctx = canvas.getContext('2d');
+            
+            // Draw some matrix-like effects on the canvas
+            ctx.fillStyle = '#fff';
+            ctx.fillRect(0, 0, 200, 100);
+            
+            // Add the canvas to the effect container and remove it from the original list
+            effect.appendChild(canvas);
+        });
+    </script>
+    
+</body>
+</html>
